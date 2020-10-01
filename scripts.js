@@ -72,3 +72,15 @@ if(mousedown) {
 }   */
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
+
+
+//below is my attempt to make the player go fullscreen
+const fullScreen = document.querySelector('.full__screen');
+
+function goFullScreen() {
+    player.requestFullscreen();
+}
+
+fullScreen.addEventListener('click', goFullScreen);
+
+//IT WORKS!!! :)
